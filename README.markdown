@@ -1,8 +1,6 @@
 # tintin++ client scripts for Discworld MUD with a Wyzzard player in mind
 
 
-For the full experience you need festival-tts and mpg321 installed for text-to-speech support and mp3 file support.
-
 # SETUP
 
 ## OUT-OF-MUD Setup
