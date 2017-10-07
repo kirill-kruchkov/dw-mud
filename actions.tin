@@ -9,7 +9,7 @@
 #act {^You last logged in from}
 {
   money brief;
-  score brief;
+  #nop `score brief` will be requested on money brief to ensure bar update
 }
 
 #nop ---------------------------------------------------------------------------
@@ -142,6 +142,7 @@
 
 #act {^You are flat broke.}
 {
+  score brief;
                 #format {money}
                 {
                         %cMoney:%c None
@@ -150,6 +151,7 @@
 };
 #act {^You have a total of %0.$}
 {
+  score brief;
         #format {money}
         {
                         %cMoney:%c %s
