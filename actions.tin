@@ -5,6 +5,13 @@
 #nop BASIC COMMON INTERFACE
 #nop ---------------------------------------------------------------------------
 
+#nop REQUEST STATS on login
+#act {^You last logged in from}
+{
+  score brief
+  money brief
+}
+
 #nop ---------------------------------------------------------------------------
 #nop DEFAULT MONITOR LINES
 #nop ---------------------------------------------------------------------------
