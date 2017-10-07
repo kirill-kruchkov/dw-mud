@@ -164,27 +164,6 @@
 
 #gag {^$};
 
-#action {^A Coffee Nostra hitman steps out of the shadows.$}
-{
-        tts Hitman Hitman Hitman;
-};
-
-#action {^Noting the intentions of %8, you move in to assist %9.}
-{
-        mp3 swordraw.mp3;
-};
-
-#action {^Whoops!  You %9}
-{
-        mp3 toasty.mp3;
-};
-
-#action {^You have a good look at the ground and scavenge %1 from}
-{
-  tts %1;
-}
-
-
 #nop ---------------------------------------------------------------------------
 #nop CATCHING THE CHAT
 #nop ---------------------------------------------------------------------------
@@ -257,18 +236,11 @@
 
 #act {^There is a sudden white flash.  Your magical shield has broken.$}
 {
-	tts Shield Down;
 	#var tpa_on 0;
-};
-
-#action {^In blocking the attack the %* floating around you is knocked out of orbit.$}
-{
-	tts Floater;
 };
 
 #act {^With a noise that sounds like "Plink!", everything around you flashes %* for a moment.}
 {
-	mp3 ting.mp3;
 	#var sec_counter 0;
 	#var min_counter 0;
 	#var hits 0;
@@ -292,7 +264,6 @@
 
 #action {^With a noise that sounds like "Plink!", the air around %9 flashes red for a moment.$}
 {
-	mp3 ting.mp3;
 	#regexp {%9} {the skeleton warrior}
 	{
 		#var {skelcol} {<020>};
@@ -361,7 +332,6 @@
 
 #action {^There is a sudden white flash around %0}
 {
-	tts Shield %0;
 	#regexp {%0} {the skeleton warrior.}
 	{
 		#var {skelcol}{<070>};
@@ -401,7 +371,6 @@
 
 #action {%8 your chalky skin absorbs %9}
 {
-	tts ouch;
 	#math {ccccounter}{$ccccounter +1};
 };
 
@@ -419,13 +388,11 @@
 
 #action {^Your skin feels itchy; large pieces flake off as you scratch it.$}
 {
-	mp3 Combobreaker.mp3;
 	#var ccccounter -1;
 };
 
 #action {^The skeleton groans, stirs and rises.}
 {
-	mp3 skeletonrises.mp3;
 	#var {skeletime} {0};
 	#var {skelesec}  {0};
 	#var {skelcol} {<070>};
@@ -442,7 +409,6 @@
 
 #action {^The skeleton warrior dissolves into dust.  Everything he carried drops to the ground.$}
 {
-	mp3 crowdohh.mp3;
 	#untick {skeletick};
 	#var {skeletime} {-1};
 };
