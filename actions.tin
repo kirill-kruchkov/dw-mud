@@ -8,8 +8,8 @@
 #nop REQUEST STATS on login
 #act {^You last logged in from}
 {
-  score brief
-  money brief
+  money brief;
+  score brief;
 }
 
 #nop ---------------------------------------------------------------------------
