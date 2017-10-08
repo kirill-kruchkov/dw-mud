@@ -82,7 +82,7 @@ log on
 #nop ALIAS NEEDED TO SU WITH SAVING THE VARIABLES
 #nop NEEDS alias suu su TO WORK !!!
 #nop ---------------------------------------------------------------------------
-#alias su {alias tintin-settings $tpa_on:$min_counter $hits ccc:$ccccounter !; suu %1};
+#nop alias su {alias tintin-settings $tpa_on:$min_counter $hits ccc:$ccccounter !; suu %1};
 
 #nop ---------------------------------------------------------------------------
 # ALIASES
