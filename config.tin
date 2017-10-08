@@ -76,7 +76,7 @@ log on
 #nop ALIAS NEEDED TO QUIT WITH SAVING THE VARIABLES
 #nop NEEDS alias quitt quit TO WORK !!!
 #nop ---------------------------------------------------------------------------
-#alias quit {alias tintin-settings $tpa_on:$min_counter $hits ccc:$ccccounter !; quitt};
+#nop alias quit {alias tintin-settings $tpa_on:$min_counter $hits ccc:$ccccounter !; quitt};
 
 #nop ---------------------------------------------------------------------------
 #nop ALIAS NEEDED TO SU WITH SAVING THE VARIABLES
