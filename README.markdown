@@ -1,10 +1,8 @@
 # tintin++ client scripts for Discworld MUD with a Wyzzard player in mind
 
+Customised for use inside Docker container.
 
 # SETUP
-
-## OUT-OF-MUD Setup
-Please have a read of config.tin and change it accordingly. Ping me if any of it doesn't make sense and I'll make it clearer.
 
 ## IN-MUD Setup
 You need the following settings in your Discworld options.
